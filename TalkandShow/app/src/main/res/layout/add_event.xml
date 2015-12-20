@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <GridLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:columnCount="6"
+    android:rowCount="11"
+    android:id="@+id/gridLayout2">
+        <ImageButton android:id="@+id/addImage"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_column="0"
+            android:layout_columnSpan="6"
+            android:layout_row="0"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제목: "
+            android:id="@+id/title_edit"
+            android:layout_row="1" android:layout_column="0"
+            android:textSize="18dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/colorPrimaryText" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_edit1"
+            android:layout_row="1" android:layout_column="1" android:layout_columnSpan="5"
+            android:textSize="18dp"
+            android:textAlignment="textStart"
+            android:layout_gravity="fill"
+            android:layout_marginRight="40dp"
+            android:singleLine="true"
+            android:hint="제목을 입력해주세요." />
+
+        <TextView android:id="@+id/type_edit"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_row="2" android:layout_column="0"
+            android:text="종류: "
+            android:textSize="18dp"
+            android:layout_gravity="center_vertical|right"
+            android:textColor="@color/colorPrimaryText" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="강연"
+            android:id="@+id/lecture"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:textSize="18dp" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="공연"
+            android:id="@+id/play"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:textSize="18dp"
+            android:layout_gravity="fill_horizontal" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기타"
+            android:id="@+id/other"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:textSize="18dp"
+            android:layout_gravity="fill_horizontal|center_horizontal" />
+
+        <TextView android:id="@+id/date_edit"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_row="3" android:layout_column="0"
+            android:text="일시: "
+            android:textSize="18dp"
+            android:layout_gravity="center_vertical|right"
+            android:textColor="@color/colorPrimaryText" />
+
+        <EditText android:id="@+id/date_edit1"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_row="3" android:layout_column="1" android:layout_columnSpan="5"
+            android:textSize="18dp"
+            android:textAlignment="textStart"
+            android:layout_gravity="fill"
+            android:layout_marginRight="40dp"
+            android:singleLine="false"
+            android:hint="날짜를 선택해주세요."
+            android:focusable="false" />
+
+        <EditText android:id="@+id/date_edit2"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_row="4" android:layout_column="1" android:layout_columnSpan="5"
+            android:textSize="18dp"
+            android:textAlignment="textStart"
+            android:layout_gravity="fill"
+            android:layout_marginRight="40dp"
+            android:singleLine="false"
+            android:hint="시간을 선택해주세요."
+            android:focusable="false"/>
+
+        <TextView android:id="@+id/place_edit"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_row="5" android:layout_column="0"
+            android:text="장소: "
+            android:textSize="18dp"
+            android:layout_gravity="center_vertical|right"
+            android:textColor="@color/colorPrimaryText" />
+
+        <EditText android:id="@+id/place_edit1"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_row="5" android:layout_column="1" android:layout_columnSpan="5"
+            android:textSize="18dp"
+            android:textAlignment="textStart"
+            android:layout_gravity="fill"
+            android:layout_marginRight="40dp"
+            android:singleLine="true"
+            android:hint="장소를 입력해주세요." />
+
+        <Button
+            android:id="@+id/moreOption"
+            android:layout_column="0"
+            android:layout_columnSpan="6"
+            android:layout_row="9"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:background="@drawable/add_circle_outline_24dp"
+            android:layout_marginTop="8dp" />
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_columnSpan="3"
+            android:layout_row="10"
+            android:text="취소"
+            android:layout_gravity="center"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#ffffff"
+            android:background="#ff5353"
+            android:textSize="18dp"
+            android:layout_columnWeight="1" />
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="3"
+            android:layout_columnSpan="3"
+            android:layout_row="10"
+            android:text="추가"
+            android:layout_gravity="center"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="20dp"
+            android:background="#ff5353"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            android:layout_columnWeight="1" />
+    </GridLayout>
+</ScrollView>

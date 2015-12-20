@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_main" android:icon="@drawable/home_lightgrey_24dp"
+            android:title="메인 메뉴" />
+        <item android:id="@+id/nav_bookmark" android:icon="@drawable/bookmark_outline_lightgrey_24dp"
+            android:title="관심이벤트 보기" />
+        <item android:id="@+id/nav_attend" android:icon="@drawable/people_outline_lightgrey_24dp"
+            android:title="참가이벤트 보기" />
+        <item android:id="@+id/nav_add" android:icon="@drawable/note_add_lightgrey_24dp"
+            android:title="추가이벤트 보기" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item android:id="@+id/nav_share" android:icon="@android:drawable/ic_menu_share"
+                android:title="Share" />
+            <item android:id="@+id/nav_send" android:icon="@android:drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+    </item>
+
+</menu>
